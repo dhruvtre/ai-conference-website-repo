@@ -1,0 +1,11 @@
+# Note Documents
+notes.md
+
+# OS files
+.DS_Store
+
+# Editor
+.vscode/
+
+# Python virtual environment
+venv/
