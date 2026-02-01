@@ -472,17 +472,24 @@ main {
 
 /* ===== Timeline ===== */
 .timeline {
+    margin: var(--space-8) 0;
+}
+
+.timeline-row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-4) var(--space-8);
-    margin: var(--space-8) 0;
+    gap: var(--space-8);
+    padding: var(--space-3) 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.timeline-row:last-child {
+    border-bottom: none;
 }
 
 .timeline-item {
     display: flex;
     gap: var(--space-4);
-    padding: var(--space-3) 0;
-    border-bottom: 1px solid var(--border);
 }
 
 .timeline-date {
@@ -827,7 +834,7 @@ main {
         padding: var(--space-12) var(--content-padding);
     }
 
-    .timeline {
+    .timeline-row {
         grid-template-columns: 1fr;
     }
 
