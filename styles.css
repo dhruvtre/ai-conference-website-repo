@@ -343,6 +343,14 @@ main {
     margin-bottom: var(--space-4);
 }
 
+.hero__title--easter-egg .egg {
+    transition: color 0.3s ease;
+}
+
+.hero__title--easter-egg:hover .egg {
+    color: var(--accent);
+}
+
 .hero__subtitle {
     font-size: var(--text-lg);
     color: var(--text-secondary);
