@@ -1021,6 +1021,14 @@ main {
 }
 
 .footer__links,
+/* Matches .footer__emails a so the pitch and the addresses read as one block */
+.footer__pitch {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0 0 var(--space-4);
+}
+
 .footer__emails {
     list-style: none;
     padding: 0;
@@ -1638,6 +1646,28 @@ main {
     font-size: 0.72rem;
     color: var(--text-secondary);
     line-height: 1.45;
+}
+
+/* ===== Award winners (home page) ===== */
+
+/* Authors sit quieter than the title so the comma boundary is visible */
+.award-winner__authors {
+    font-size: 0.82em;
+    color: var(--text-tertiary);
+}
+
+/* Same uppercase cue used on the accepted papers list */
+.award-winner__link {
+    margin-left: 6px;
+    font-size: 0.62rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent);
+    white-space: nowrap;
+}
+
+.award-winner__link:hover {
+    color: var(--accent-hover);
 }
 
 /* ===== Print Styles ===== */
