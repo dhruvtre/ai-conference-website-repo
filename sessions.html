@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/logos/favicon.svg" type="image/svg+xml">
+    <title>Sessions | CAISc 2026</title>
+    <meta name="description" content="Every talk, panel, and workshop from the first Conference for AI Scientists. Eleven sessions exploring how AI systems are changing the practice, infrastructure, and future of science.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sessions | CAISc 2026">
+    <meta property="og:description" content="Every talk, panel, and workshop from the first Conference for AI Scientists. Eleven sessions exploring how AI systems are changing the practice, infrastructure, and future of science.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://caisc2026.github.io/assets/logos/ogimage_conf_website-2.png">
+
+    <!-- Fonts - Inter (standard academic) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Site Header -->
+    <header class="site-header">
+        <div class="header-left">
+            <a href="index.html" class="header-logo"><span>CAISc</span><span>2026</span></a>
+        </div>
+        <div class="header-right">
+            <a href="index.html#about" class="header-link">About</a>
+            <a href="sessions.html" class="header-link">Sessions</a>
+            <a href="team.html" class="header-link">Team</a>
+            <a href="index.html#contact" class="header-link">Contact</a>
+            <a href="cfp.html" class="header-btn"><span>Call For Papers</span></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <button id="theme-toggle" aria-label="Toggle dark mode">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <nav class="mobile-menu" id="mobileMenu">
+        <a href="index.html#about">About</a>
+        <a href="sessions.html">Sessions</a>
+        <a href="team.html">Team</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="cfp.html">Call For Papers</a>
+    </nav>
+
+    <main>
+        <!-- Hero -->
+        <section class="team-hero">
+            <p class="eyebrow">July 17&ndash;26, 2026 &bull; Online</p>
+            <h1>Conference Sessions</h1>
+            <p class="team-hero__subtitle">
+                Every talk, panel, and workshop from the first Conference for AI Scientists. Eleven sessions exploring how AI systems are changing the practice, infrastructure, and future of science.
+            </p>
+            <p style="margin-top: var(--space-6); margin-bottom: 0;">
+                <a href="https://www.youtube.com/playlist?list=PLQcRGfk1Qd-YDEZP_yPSeCJK8toYyPT4a" class="watch-all" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    Watch all sessions on YouTube
+                </a>
+            </p>
+        </section>
+
+        <!-- ============================================================
+             SESSIONS
+
+             Cards are ordered editorially, not chronologically — the
+             YouTube playlist is ordered by upload date, which does not
+             match the running order of the conference.
+
+             Adding a session:
+               - Thumbnail: assets/session_thumbnails/<slug>.jpg, 640x360
+                 (maxresdefault downscaled).
+               - Affiliations use " / " for two concurrent organisations
+                 and ", ex-" for a former one. Keep them short so the
+                 2-column credits grid does not wrap.
+             ============================================================ -->
+        <section id="conference" class="content-section">
+            <h2>Main Program</h2>
+
+            <div class="session-grid">
+
+                <!-- 1. Opening Session -->
+                <a class="session-card" href="https://www.youtube.com/watch?v=iieZiJc2cFs&amp;list=PLQcRGfk1Qd-YDEZP_yPSeCJK8toYyPT4a" target="_blank" rel="noopener">
+                    <div class="session-card__head">
+                        <div class="session-thumb session-thumb--sm">
+                            <img src="assets/session_thumbnails/opening-session.jpg" alt="" loading="lazy" decoding="async" width="640" height="360">
+                            <span class="session-thumb__play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+                            <span class="session-thumb__duration">1:04:39</span>
+                        </div>
+                        <div class="session-card__head-body">
+                            <div class="session-card__meta">
+                                <span class="session-type">Opening</span>
+                            </div>
+                            <h3 class="session-card__title">CAISc 2026 Opening Session</h3>
+                        </div>
+                    </div>
+                    <div class="session-card__speakers">
+                        <div class="spk">
+                            <img class="spk-avatar" src="assets/steering_committee_pictures/dhruv_k_pic.jpg" alt="" loading="lazy" decoding="async">
+                            <div class="spk__body"><span class="spk__name">Dr. Dhruv Kumar</span><span class="spk__affil">BITS Pilani</span></div>
+                        </div>
+                        <div class="spk">
+                            <img class="spk-avatar" src="assets/steering_committee_pictures/paras_pic.jpg" alt="" loading="lazy" decoding="async">
+                            <div class="spk__body"><span class="spk__name">Paras Chopra</span><span class="spk__affil">Lossfunk</span></div>
+                        </div>
+                        <div class="spk">
+                            <img class="spk-avatar" src="assets/steering_committee_pictures/dhruv_t_pic.jpeg" alt="" loading="lazy" decoding="async">
+                            <div class="spk__body"><span class="spk__name">Dhruv Trehan</span><span class="spk__affil">Lossfunk</span></div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 2. The Future of Research Communication -->
+                <a class="session-card" href="https://www.youtube.com/watch?v=EroTTDbMrOk&amp;list=PLQcRGfk1Qd-YDEZP_yPSeCJK8toYyPT4a" target="_blank" rel="noopener">
+                    <div class="session-card__head">
+                        <div class="session-thumb session-thumb--sm">
+                            <img src="assets/session_thumbnails/future-of-research-communication.jpg" alt="" loading="lazy" decoding="async" width="640" height="360">
+                            <span class="session-thumb__play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+                            <span class="session-thumb__duration">1:14:13</span>
+                        </div>
+                        <div class="session-card__head-body">
+                            <div class="session-card__meta">
+                                <span class="session-type">Panel</span>
+                            </div>
+                            <h3 class="session-card__title">The Future of Research Communication</h3>
+                        </div>
+                    </div>
+                    <div class="session-card__speakers">
+                        <div class="spk">
+                            <img class="spk-avatar" src="assets/speaker_pictures/francescop.png" alt="" loading="lazy" decoding="async">
+                            <div class="spk__body"><span class="spk__name">Francesco Pappone</span><span class="spk__affil">Paradigma</span></div>
+                        </div>
+                        <div class="spk">
+                            <img class="spk-avatar" src="assets/speaker_pictures/rehaan_ahmad.jpg" alt="" loading="lazy" decoding="async">
+                            <div class="spk__body"><span class="spk__name">Rehaan Ahmad</span><span class="spk__affil">alphaXiv</span></div>
+                        </div>
+                        <div class="spk">
+                            <img class="spk-avatar" src="assets/speaker_pictures/John_Bohannon.webp" alt="" loading="lazy" decoding="async">
+                            <div class="spk__body"><span class="spk__name">Dr. John Bohannon</span><span class="spk__affil">Ex-Science Journalist</span></div>
+                        </div>
+                        <div class="spk">
+                            <img class="spk-avatar" src="assets/speaker_pictures/Himanshu_Physera.png" alt="" loading="lazy" decoding="async">
+                            <div class="spk__body"><span class="spk__name">Himanshu Dubey</span><span class="spk__affil">GroundZero / Physera</span></div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 3. AI Across The Scientific Method -->
+                <a class="session-card" href="https://www.youtube.com/watch?v=UvpiJWu9T4c&amp;list=PLQcRGfk1Qd-YDEZP_yPSeCJK8toYyPT4a" target="_blank" rel="noopener">
+                    <div class="session-card__head">
+                        <div class="session-thumb session-thumb--sm">
+                            <img src="assets/session_thumbnails/ai-across-scientific-method.jpg" alt="" loading="lazy" decoding="async" width="640" height="360">
+                            <span class="session-thumb__play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+                            <span class="session-thumb__duration">57:38</span>
+                        </div>
+                        <div class="session-card__head-body">
+                            <div class="session-card__meta">
+                                <span class="session-type">Panel</span>
+                            </div>
+                            <h3 class="session-card__title">AI Across The Scientific Method</h3>
+                        </div>
+                    </div>
+                    <div class="session-card__speakers">
+                        <div class="spk">
+                            <img class="spk-avatar" src="assets/speaker_pictures/prof_chenhao_tan.jpeg" alt="" loading="lazy" decoding="async">
+                            <div class="spk__body"><span class="spk__name">Prof. Chenhao Tan</span><span class="spk__affil">UChicago</span></div>
+                        </div>
+                        <div class="spk">
+                            <img class="spk-avatar" src="assets/speaker_pictures/federico_bianchi.jpg" alt="" loading="lazy" decoding="async">
+                            <div class="spk__body"><span class="spk__name">Dr. Federico Bianchi</span><span class="spk__affil">Together AI</span></div>
+                        </div>
+                        <div class="spk">
+                            <img class="spk-avatar" src="assets/speaker_pictures/John_Bohannon.webp" alt="" loading="lazy" decoding="async">
+                            <div class="spk__body"><span class="spk__name">Dr. John Bohannon</span><span class="spk__affil">Ex-Science Journalist</span></div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 4. Building Sovereign AI for Science in India -->
+                <a class="session-card" href="https://www.youtube.com/watch?v=gBho70RtCOI&amp;list=PLQcRGfk1Qd-YDEZP_yPSeCJK8toYyPT4a" target="_blank" rel="noopener">
+                    <div class="session-card__head">
+                        <div class="session-thumb session-thumb--sm">
+                            <img src="assets/session_thumbnails/sovereign-ai-india.jpg" alt="" loading="lazy" decoding="async" width="640" height="360">
+                            <span class="session-thumb__play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+                            <span class="session-thumb__duration">54:10</span>
+                        </div>
+                        <div class="session-card__head-body">
+                            <div class="session-card__meta">
+                                <span class="session-type">Panel</span>
+                            </div>
+                            <h3 class="session-card__title">Building Sovereign AI for Science in India</h3>
+                        </div>
+                    </div>
+                    <div class="session-card__speakers">
+                        <div class="spk">
+                            <img class="spk-avatar" src="assets/speaker_pictures/dr_shivkumar.jpeg" alt="" loading="lazy" decoding="async">
+                            <div class="spk__body"><span class="spk__name">Dr. Shivkumar K</span><span class="spk__affil">ANRF India</span></div>
+                        </div>
+                        <div class="spk">
+                            <img class="spk-avatar" src="assets/speaker_pictures/vishnu_s.jpeg" alt="" loading="lazy" decoding="async">
+                            <div class="spk__body"><span class="spk__name">Vishnu Subramanian</span><span class="spk__affil">Jarvis Labs / E2E Networks</span></div>
+                        </div>
+                        <div class="spk">
+                            <img class="spk-avatar" src="assets/speaker_pictures/pranav_hari.jpeg" alt="" loading="lazy" decoding="async">
+                            <div class="spk__body"><span class="spk__name">Pranav Hari</span><span class="spk__affil">Muesli, ex-Lightspeed</span></div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 5. Studying the Earth with AI -->
+                <a class="session-card" href="https://www.youtube.com/watch?v=sdWEEFYSHKY&amp;list=PLQcRGfk1Qd-YDEZP_yPSeCJK8toYyPT4a" target="_blank" rel="noopener">
+                    <div class="session-card__head">
+                        <div class="session-thumb session-thumb--sm">
+                            <img src="assets/session_thumbnails/studying-the-earth-with-ai.jpg" alt="" loading="lazy" decoding="async" width="640" height="360">
+                            <span class="session-thumb__play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+                            <span class="session-thumb__duration">1:00:20</span>
+                        </div>
+                        <div class="session-card__head-body">
+                            <div class="session-card__meta">
+                                <span class="session-type">Talk</span>
+                            </div>
+                            <h3 class="session-card__title">Studying the Earth with AI</h3>
+                        </div>
+                    </div>
+                    <div class="session-card__speakers">
+                        <div class="spk">
+                            <img class="spk-avatar" src="assets/speaker_pictures/dr_manmeet.webp" alt="" loading="lazy" decoding="async">
+                            <div class="spk__body"><span class="spk__name">Dr. Manmeet Singh</span><span class="spk__affil">WKU / UT Austin</span></div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 6. Accelerating Biology with AI -->
+                <a class="session-card" href="https://www.youtube.com/watch?v=m7zCimxA8FU&amp;list=PLQcRGfk1Qd-YDEZP_yPSeCJK8toYyPT4a" target="_blank" rel="noopener">
+                    <div class="session-card__head">
+                        <div class="session-thumb session-thumb--sm">
+                            <img src="assets/session_thumbnails/accelerating-biology-with-ai.jpg" alt="" loading="lazy" decoding="async" width="640" height="360">
+                            <span class="session-thumb__play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+                            <span class="session-thumb__duration">56:03</span>
+                        </div>
+                        <div class="session-card__head-body">
+                            <div class="session-card__meta">
+                                <span class="session-type">Panel</span>
+                            </div>
+                            <h3 class="session-card__title">Accelerating Biology with AI</h3>
+                        </div>
+                    </div>
+                    <div class="session-card__speakers session-card__speakers--three">
+                        <div class="spk">
+                            <img class="spk-avatar" src="assets/speaker_pictures/tanay.webp" alt="" loading="lazy" decoding="async">
+                            <div class="spk__body"><span class="spk__name">Tanay Lohia</span><span class="spk__affil">Mandrake Bio</span></div>
+                        </div>
+                        <div class="spk">
+                            <img class="spk-avatar" src="assets/speaker_pictures/ravi_sharma.jpeg" alt="" loading="lazy" decoding="async">
+                            <div class="spk__body"><span class="spk__name">Ravi Sharma</span><span class="spk__affil">OpenBio</span></div>
+                        </div>
+                        <div class="spk">
+                            <img class="spk-avatar" src="assets/speaker_pictures/anindyadeep.jpg" alt="" loading="lazy" decoding="async">
+                            <div class="spk__body"><span class="spk__name">Anindyadeep S</span><span class="spk__affil">LiteFold</span></div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 7. Agent Native Research Artifacts -->
+                <a class="session-card" href="https://www.youtube.com/watch?v=s8MLymeiNQk&amp;list=PLQcRGfk1Qd-YDEZP_yPSeCJK8toYyPT4a" target="_blank" rel="noopener">
+                    <div class="session-card__head">
+                        <div class="session-thumb session-thumb--sm">
+                            <img src="assets/session_thumbnails/agent-native-research-artifacts.jpg" alt="" loading="lazy" decoding="async" width="640" height="360">
+                            <span class="session-thumb__play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+                            <span class="session-thumb__duration">53:54</span>
+                        </div>
+                        <div class="session-card__head-body">
+                            <div class="session-card__meta">
+                                <span class="session-type">Talk</span>
+                            </div>
+                            <h3 class="session-card__title">Agent Native Research Artifacts</h3>
+                        </div>
+                    </div>
+                    <div class="session-card__speakers">
+                        <div class="spk">
+                            <img class="spk-avatar" src="assets/speaker_pictures/dr_amber_liu.jpeg" alt="" loading="lazy" decoding="async">
+                            <div class="spk__body"><span class="spk__name">Dr. Amber Liu</span><span class="spk__affil">UMichigan / ARA Commons</span></div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 8. The alphaXiv Story & Showcase -->
+                <a class="session-card" href="https://www.youtube.com/watch?v=GeK75DcZNzw&amp;list=PLQcRGfk1Qd-YDEZP_yPSeCJK8toYyPT4a" target="_blank" rel="noopener">
+                    <div class="session-card__head">
+                        <div class="session-thumb session-thumb--sm">
+                            <img src="assets/session_thumbnails/alphaxiv-story-showcase.jpg" alt="" loading="lazy" decoding="async" width="640" height="360">
+                            <span class="session-thumb__play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+                            <span class="session-thumb__duration">48:54</span>
+                        </div>
+                        <div class="session-card__head-body">
+                            <div class="session-card__meta">
+                                <span class="session-type">Showcase</span>
+                            </div>
+                            <h3 class="session-card__title">The alphaXiv Story &amp; Showcase</h3>
+                        </div>
+                    </div>
+                    <div class="session-card__speakers">
+                        <div class="spk">
+                            <img class="spk-avatar" src="assets/speaker_pictures/rehaan_ahmad.jpg" alt="" loading="lazy" decoding="async">
+                            <div class="spk__body"><span class="spk__name">Rehaan Ahmad</span><span class="spk__affil">alphaXiv</span></div>
+                        </div>
+                        <div class="spk">
+                            <img class="spk-avatar" src="assets/speaker_pictures/Raj_P.jpeg" alt="" loading="lazy" decoding="async">
+                            <div class="spk__body"><span class="spk__name">Raj Palleti</span><span class="spk__affil">alphaXiv</span></div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Pre-Conference Workshop Series -->
+        <section id="workshops" class="content-section">
+            <h2>Pre-Conference Workshop Series</h2>
+            <p>
+                A hands-on series on AI-driven research automation, run in the months leading up to the conference.
+            </p>
+
+            <div class="session-grid">
+
+                <!-- 9. Automated Research with AutoVoila -->
+                <a class="session-card" href="https://www.youtube.com/watch?v=ouQELzH5Zqc&amp;list=PLQcRGfk1Qd-YDEZP_yPSeCJK8toYyPT4a" target="_blank" rel="noopener">
+                    <div class="session-card__head">
+                        <div class="session-thumb session-thumb--sm">
+                            <img src="assets/session_thumbnails/automated-research-autovoila.jpg" alt="" loading="lazy" decoding="async" width="640" height="360">
+                            <span class="session-thumb__play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+                            <span class="session-thumb__duration">52:49</span>
+                        </div>
+                        <div class="session-card__head-body">
+                            <div class="session-card__meta">
+                                <span class="session-type">Workshop</span>
+                            </div>
+                            <h3 class="session-card__title">Automated Research with AutoVoila</h3>
+                        </div>
+                    </div>
+                    <div class="session-card__speakers">
+                        <div class="spk">
+                            <img class="spk-avatar" src="assets/steering_committee_pictures/paras_pic.jpg" alt="" loading="lazy" decoding="async">
+                            <div class="spk__body"><span class="spk__name">Paras Chopra</span><span class="spk__affil">Lossfunk</span></div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 10. Using Autoresearch for Science -->
+                <a class="session-card" href="https://www.youtube.com/watch?v=deU-NE-sU_8&amp;list=PLQcRGfk1Qd-YDEZP_yPSeCJK8toYyPT4a" target="_blank" rel="noopener">
+                    <div class="session-card__head">
+                        <div class="session-thumb session-thumb--sm">
+                            <img src="assets/session_thumbnails/using-autoresearch-for-science.jpg" alt="" loading="lazy" decoding="async" width="640" height="360">
+                            <span class="session-thumb__play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+                            <span class="session-thumb__duration">51:54</span>
+                        </div>
+                        <div class="session-card__head-body">
+                            <div class="session-card__meta">
+                                <span class="session-type">Workshop</span>
+                            </div>
+                            <h3 class="session-card__title">Using Autoresearch for Science</h3>
+                        </div>
+                    </div>
+                    <div class="session-card__speakers">
+                        <div class="spk">
+                            <img class="spk-avatar" src="assets/speaker_pictures/abhinav_kumar.jpeg" alt="" loading="lazy" decoding="async">
+                            <div class="spk__body"><span class="spk__name">Abhinav Kumar</span><span class="spk__affil">Lossfunk</span></div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 11. Using AI Agent Skills for Automated Research -->
+                <a class="session-card" href="https://www.youtube.com/watch?v=GMK6RoMutuI&amp;list=PLQcRGfk1Qd-YDEZP_yPSeCJK8toYyPT4a" target="_blank" rel="noopener">
+                    <div class="session-card__head">
+                        <div class="session-thumb session-thumb--sm">
+                            <img src="assets/session_thumbnails/ai-agent-skills-automated-research.jpg" alt="" loading="lazy" decoding="async" width="640" height="360">
+                            <span class="session-thumb__play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+                            <span class="session-thumb__duration">51:49</span>
+                        </div>
+                        <div class="session-card__head-body">
+                            <div class="session-card__meta">
+                                <span class="session-type">Workshop</span>
+                            </div>
+                            <h3 class="session-card__title">Using AI Agent Skills for Automated Research</h3>
+                        </div>
+                    </div>
+                    <div class="session-card__speakers">
+                        <div class="spk">
+                            <img class="spk-avatar" src="assets/speaker_pictures/rahul_sundar.png" alt="" loading="lazy" decoding="async">
+                            <div class="spk__body"><span class="spk__name">Dr. Rahul Sundar</span><span class="spk__affil">Verisk, ex-IIT Madras</span></div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__columns">
+                <div class="footer__col">
+                    <h4>Navigation</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sessions.html">Sessions</a></li>
+                        <li><a href="cfp.html#dates">Key Dates</a></li>
+                        <li><a href="cfp.html#tracks">Tracks</a></li>
+                        <li><a href="verifiable-problems/">Verifiable Problems</a></li>
+                        <li><a href="cfp.html#review">Review &amp; Awards</a></li>
+                        <li><a href="team.html">Team</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Get in Touch</h4>
+                    <ul class="footer__emails">
+                        <li><a href="mailto:dhruv.kumar@pilani.bits-pilani.ac.in">dhruv.kumar@pilani.bits-pilani.ac.in</a></li>
+                        <li><a href="mailto:dhruv.trehan@lossfunk.com">dhruv.trehan@lossfunk.com</a></li>
+                        <li><a href="mailto:paras@lossfunk.com">paras@lossfunk.com</a></li>
+                    </ul>
+                    <div class="footer__social">
+                        <a href="https://twitter.com/lossfunk" target="_blank" rel="noopener" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://linkedin.com/company/lossfunk" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__organized-by">
+                <span>Organized by</span>
+                <div class="footer__org-logos">
+                    <a href="https://www.bits-pilani.ac.in/" target="_blank" rel="noopener">
+                        <img src="assets/logos/BITS_Pilani-Logo.svg.png" alt="BITS Pilani" class="footer__org-logo">
+                    </a>
+                    <a href="https://lossfunk.com/" target="_blank" rel="noopener">
+                        <img src="assets/logos/lossfunk-logo.jpg" alt="Lossfunk" class="footer__org-logo footer__org-logo--invert">
+                    </a>
+                </div>
+            </div>
+            <p class="footer__copyright">&copy; 2026 Conference For AI Scientists. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Dark mode toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            html.setAttribute('data-theme', savedTheme);
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            html.setAttribute('data-theme', 'dark');
+        }
+        themeToggle.addEventListener('click', () => {
+            const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+        });
+
+        // Mobile menu toggle
+        const navToggle = document.getElementById('navToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        navToggle.addEventListener('click', () => mobileMenu.classList.toggle('active'));
+        mobileMenu.querySelectorAll('a').forEach(a =>
+            a.addEventListener('click', () => mobileMenu.classList.remove('active'))
+        );
+    </script>
+</body>
+</html>
