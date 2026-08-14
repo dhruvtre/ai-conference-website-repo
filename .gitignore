@@ -19,3 +19,6 @@ social_posts/
 
 # Duplicate styles (problems page uses ../styles.css)
 verifiable-problems/styles.css
+
+# Submission data export (contains all submissions incl. rejections)
+CAISc 2026 Submission Status.csv

@@ -1253,7 +1253,8 @@ main {
 
 /* ===== Sessions Page ===== */
 
-.watch-all {
+/* Shared page-level CTA (sessions + accepted papers) */
+.page-cta {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -1267,12 +1268,12 @@ main {
     transition: background-color 0.2s ease;
 }
 
-.watch-all:hover {
+.page-cta:hover {
     background-color: var(--accent-hover);
     color: #fff;
 }
 
-.watch-all svg {
+.page-cta svg {
     width: 16px;
     height: 16px;
 }
@@ -1512,6 +1513,131 @@ main {
     .session-card__speakers--three {
         grid-template-columns: 1fr;
     }
+}
+
+/* ===== Accepted Papers Page ===== */
+
+/* Two columns so the full proceedings stay visible with minimal scrolling.
+   Note: expandable content inside CSS columns reflows badly, which is why
+   abstracts are not shown here. */
+.paper-list {
+    list-style: none;
+    padding: 0;
+    margin: var(--space-5) 0;
+    column-count: 2;
+    column-gap: var(--space-8);
+}
+
+@media (max-width: 820px) {
+    .paper-list {
+        column-count: 1;
+    }
+}
+
+/* Explicit two-column split, used where the first entry of each column
+   must be controlled (award winners). CSS multi-column decides its own
+   break points, so it cannot guarantee that. */
+.paper-cols {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 var(--space-8);
+    align-items: start;
+    margin: var(--space-5) 0;
+}
+
+@media (max-width: 820px) {
+    .paper-cols {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+
+.paper-list--col {
+    column-count: 1;
+    margin: 0;
+}
+
+.paper {
+    display: flex;
+    gap: var(--space-3);
+    padding: 0 0 var(--space-3);
+    break-inside: avoid;
+}
+
+.paper::before {
+    content: "";
+    flex: 0 0 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--accent);
+    margin-top: 9px;
+    opacity: 0.55;
+}
+
+/* Titles sit at regular weight — at this density, bolding every entry
+   makes the list harder to parse rather than easier. */
+.paper__body {
+    min-width: 0;
+    flex: 1;
+}
+
+.paper__title {
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.45;
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.paper__title:hover {
+    color: var(--accent);
+}
+
+/* Every title is an outbound link, so it needs a visible cue: at regular
+   weight there is nothing else marking these as clickable. */
+.paper__title::after {
+    content: "OpenReview ↗";
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 0.62rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-tertiary);
+    white-space: nowrap;
+}
+
+.paper__title:hover::after {
+    color: var(--accent);
+}
+
+/* Award badge — same filled-pill treatment as team-card__chair-badge,
+   sits at the end of the author line so it does not crowd the title
+   or the OpenReview cue. */
+.paper__award {
+    display: inline-block;
+    margin-left: 6px;
+    /* inline-block margins count toward the line box, so this is what
+       creates clearance when the pill wraps below the author names */
+    margin-top: 7px;
+    vertical-align: 1px;
+    /* keep the pill intact and off the start of a wrapped line */
+    white-space: nowrap;
+    background-color: var(--accent);
+    color: #fff;
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    border-radius: 999px;
+}
+
+/* Ready for author data when it is available from OpenReview. */
+.paper__authors {
+    margin: 3px 0 0;
+    font-size: 0.72rem;
+    color: var(--text-secondary);
+    line-height: 1.45;
 }
 
 /* ===== Print Styles ===== */
