@@ -1020,7 +1020,6 @@ main {
     margin: 0 0 var(--space-4);
 }
 
-.footer__links,
 /* Matches .footer__emails a so the pitch and the addresses read as one block */
 .footer__pitch {
     font-size: var(--text-sm);
@@ -1029,6 +1028,7 @@ main {
     margin: 0 0 var(--space-4);
 }
 
+.footer__links,
 .footer__emails {
     list-style: none;
     padding: 0;
